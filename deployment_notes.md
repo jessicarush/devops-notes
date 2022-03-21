@@ -4,9 +4,21 @@
 
 <!-- toc -->
 
+- [Deploy multiple sites on digitalocean with nginx server blocks](#deploy-multiple-sites-on-digitalocean-with-nginx-server-blocks)
+- [Security](#security)
+  * [Basic](#basic)
+  * [Ban repeated login attempts](#ban-repeated-login-attempts)
+  * [Rate Limiting](#rate-limiting)
+  * [WAF](#waf)
+  * [Security links](#security-links)
+
+<!-- tocstop -->
+
 ## Deploy multiple sites on digitalocean with nginx server blocks 
 
 - See [this digitalocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04).
+
+TODO...
 
 
 ## Security
