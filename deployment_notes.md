@@ -34,7 +34,7 @@ For detailed steps see [python-notes/deployment.md](https://github.com/jessicaru
 
 ### Ban repeated login attempts
 
-Fail2Ban is an intrusion prevention software framework that protects computer servers from brute-force attacks. It sets up a daemon that can be used to monitor the logs of services and ban clients that repeatedly fail authentication checks.
+[Fail2Ban](https://www.fail2ban.org/) is an intrusion prevention software framework that protects computer servers from brute-force attacks. It sets up a daemon that can be used to monitor the logs of services and ban clients that repeatedly fail authentication checks.
 
 You configure the amount of login attempts within a period and the ban length. For example, if more than *x* attempts in *n* minutes, ban the client for *m* minutes.
 
