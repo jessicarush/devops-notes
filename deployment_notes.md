@@ -18,6 +18,31 @@
 
 - See [this digitalocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04).
 
+One change from this article is for serving static React files that have react-router routing. In the nginx configuration file located in `/etc/nginx/sites-enabled`, instead of this typical block:
+
+```text
+location / {
+    try_files $uri $uri/ =404;
+}
+```
+
+We do this:
+
+```text
+location / {
+    try_files $uri $uri/ /index.html;
+}
+```
+
+This comes from [Miguel's instructions](https://blog.miguelgrinberg.com/post/how-to-deploy-a-react-router-flask-application). Note he also uses the following header:
+
+```text
+location / {
+    try_files $uri $uri/ /index.html;
+    add_header Cache-Control "no-cache";
+}
+```
+
 
 ## Security
 
